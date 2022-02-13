@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- title 元素定义浏览器工具栏中的标题，此标签定义在 -->
+<title>布局</title> 
+<html>
+    <head>  
+      <style>
+        .header{
+          background-color:#FFD700;
+        }
+        .menu{
+          background:#FFD700;
+          height: 200px;
+          width: 100px;
+          float:left;
+        }
+        .content{
+          background-color:#EEEEEE;
+          height:200px;
+          width:400px;
+          float:left;
+        }
+       .footer{
+        background-color:#FFA500;clear:both;text-align:center;
+       }
+    </style>
+    </head>
+    <body>
+        <!-- 显示区，执行到此处所需的时间一般认为是白屏时间 -->
+      <div id="container" style="width: 500px;">
+        <div id="header" class="header" >
+            <h1 style="margin-bottom: 0px;">网页标题</h1>
+        </div>
+        <div id = "menu" class="menu" >
+            <b>菜单</b><br>
+            HTML<br>
+            CSS<br>
+        </div>
+        <div id="content" class="content" >
+          这里填写内容
+        </div>
+        <div id="footer" class="footer" >
+            页脚
+        </div>
+      </div>
+      <!-- 隐藏区，不需要在首屏展示时展示的区域，解析出应该显示的部分的时间被认为是首屏时间 -->
+      <div id = "hideMessageArea">
+
+      </div>
+
+    </body>
+</html>
